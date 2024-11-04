@@ -14,6 +14,13 @@ defmodule ForumApp.Forum do
       define :remove_post, action: :destroy
     end
     
+    resource ForumApp.Forum.Comment do
+      define :add_comment, action: :create
+      define :list_comments, action: :read
+      define :update_comment, action: :update
+      define :remove_comment, action: :destroy
+    end
+    
   end
   
 end
