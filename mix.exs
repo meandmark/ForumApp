@@ -34,6 +34,9 @@ defmodule ForumApp.MixProject do
   defp deps do
     [
       {:ash, "~> 3.0"},
+      {:ash_postgres, "~> 2.4"},
+			{:ash_phoenix, "~> 2.1"},
+			{:picosat_elixir, "~> 0.2.3"},
       {:igniter, "~> 0.3"},
       {:phoenix, "~> 1.7.14"},
       {:phoenix_ecto, "~> 4.5"},
