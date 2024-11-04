@@ -7,6 +7,13 @@ defmodule ForumApp.Forum do
       define :remove_board, action: :destroy
     end
     
+    resource ForumApp.Forum.Post do
+      define :add_post, action: :create
+      define :list_posts, action: read
+      define :update_post, action: :update
+      define :remove_post, action: :destroy
+    end
+    
   end
   
 end
