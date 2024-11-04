@@ -1,4 +1,6 @@
 defmodule ForumApp.Forum do
+  use Ash.Domain
+  
   resources do
     resource ForumApp.Forum.Board do
       define :add_board, action: :create
