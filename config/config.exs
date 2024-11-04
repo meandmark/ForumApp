@@ -41,7 +41,7 @@ config :forum_app,
   generators: [timestamp_type: :utc_datetime]
   
 config :forum_app, 
-	ash_domains[ForumApp.Forum]
+	ash_domains: [ForumApp.Forum]
 
 # Configures the endpoint
 config :forum_app, ForumAppWeb.Endpoint,
