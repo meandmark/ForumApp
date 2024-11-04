@@ -39,6 +39,9 @@ config :spark,
 config :forum_app,
   ecto_repos: [ForumApp.Repo],
   generators: [timestamp_type: :utc_datetime]
+  
+config :forum_app, 
+	ash_domains[ForumApp.Forum]
 
 # Configures the endpoint
 config :forum_app, ForumAppWeb.Endpoint,
