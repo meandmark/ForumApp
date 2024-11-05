@@ -18,6 +18,7 @@ defmodule ForumAppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/boards", BoardsView
   end
 
   # Other scopes may use custom stacks.
