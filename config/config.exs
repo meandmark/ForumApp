@@ -36,10 +36,8 @@ config :spark,
     "Ash.Domain": [section_order: [:resources, :policies, :authorization, :domain, :execution]]
   ]
 
-config :forum_app, 
-	ash_domains: [ForumApp.Forum]
-
 config :forum_app,
+  ash_domains: [ForumApp.Forum],
   ecto_repos: [ForumApp.Repo],
   generators: [timestamp_type: :utc_datetime]
   
