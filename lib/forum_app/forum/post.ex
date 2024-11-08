@@ -5,7 +5,7 @@ defmodule ForumApp.Forum.Post do
   	
   postgres do
     table "posts"
-    repo ForumApp.Forum
+    repo ForumApp.Repo
   end
   
   actions do
